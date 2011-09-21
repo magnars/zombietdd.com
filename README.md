@@ -1,5 +1,5 @@
-www.zombietdd.com
-=================
+zombietdd.com
+=============
 
 Nettsidene for zombietdd. Laget med [Middleman](http://middlemanapp.com/).
 
