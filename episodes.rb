@@ -9,7 +9,8 @@ class Episodes
            Episode.new(:number => '06', :youtube => 'uM5n1z1NHK4', :size => "261mb", :name => "1/3 of the Beast"),
            Episode.new(:number => '07', :youtube => 'QN7AOnoOVs4', :size => "222mb", :name => "Mot klokka"),
            Episode.new(:number => '08', :youtube => 'lmM0Ke-BOGY', :size => "262mb", :name => "Until You Drop"),
-           Episode.new(:number => '09', :youtube => 'dDuPUCzVfWg', :size => "203mb", :name => "Backend's Back")
+           Episode.new(:number => '09', :youtube => 'dDuPUCzVfWg', :size => "203mb", :name => "Backend's Back"),
+           Episode.new(:number => '10', :youtube => '7JySbj8ccEI', :size => "215mb", :name => "Roten til litt vondt", :github_excuse => "Ingen kode denne gangen, jeg glemte å lage ny branch for episoden. :-P")
     ]
   end
   
@@ -19,10 +20,11 @@ class Episodes
 end
 
 class Episode
-  attr_reader :number, :youtube, :size, :name
+  attr_reader :number, :youtube, :size, :name, :github_excuse
   
   def initialize(params)
     @number, @youtube, @size, @name = params[:number], params[:youtube], params[:size], params[:name]
+    @github_excuse = params[:github_excuse] || false
   end
   
   def next
@@ -38,7 +40,7 @@ class Episode
   end
   
   def link
-    "http://zombietdd.com/e#{@number}.html"
+    "/e#{@number}.html"
   end
   
   def dropbox_link
@@ -46,11 +48,7 @@ class Episode
   end
   
   def github_link
-    "https://github.com/magnars/Zombie-TDD/tree/episode_#{@number}"
-  end
-  
-  def github_info
-    ""
+    "https://github.com/magnars/Zombie-TDD/tree/episode_#{@number}" unless @github_excuse
   end
   
   def filename
@@ -73,7 +71,7 @@ class FirstEpisode < Episode
   end
 
   def link
-    "http://zombietdd.com/"
+    "/"
   end
 
   def welcome_text

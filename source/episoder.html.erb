@@ -1,0 +1,12 @@
+<div id="episodes">
+  <h2>Alle episodene så langt</h2>
+  <ul>
+  <% for episode in Episodes.all %>
+    <li><a href="<%= episode.link %>"><%= episode.title %></a></li>
+  <% end %>
+  </ul>
+</div>
+
+<div id="signup">
+  <%= partial "signup_form" %>
+</div>

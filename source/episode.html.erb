@@ -8,17 +8,22 @@
 
 <div id="download">
   <% if @episode.github_link %>
-     Her er <a href="<%= @episode.github_link %>">koden for denne episoden</a>.
+     Her er <a href="<%= @episode.github_link %>">koden for episoden</a>.
+  <% elsif @episode.github_excuse %>
+    <%= @episode.github_excuse %>
   <% end %>
-  <%= @episode.github_info %>
   Du kan også laste den ned og se på bussen: 
   <a href="<%= @episode.dropbox_link %>"><%= @episode.filename %></a> (<%= @episode.size %>) 
-  - Dropbox gir kjipe headers, så høyreklikk og Lagre som ...
+  - Dropbox gir kjipe headers, så høyreklikk og Lagre&nbsp;som&nbsp;...
+  <% if not @episode.next %>
+    Hvis du har gått glipp av noe, kan du sjekke ut <a href="/episoder.html">alle episodene</a> her.
+  <% end %>
 </div>
 
 <div id="more">
   <% if @episode.next %>
     <div id="next">
+      <a id="all_episodes" href="/episoder.html">Alle episoder</a>
       <h2>Sett den ferdig? Her er <a href="<%= @episode.next.link %>"><%= @episode.next.title %></a></h2>
     </div>
   <% end %>
