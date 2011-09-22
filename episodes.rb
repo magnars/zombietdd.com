@@ -45,6 +45,14 @@ class Episode
     "http://dl.dropbox.com/u/3615058/zombietdd/#{filename}"
   end
   
+  def github_link
+    "https://github.com/magnars/Zombie-TDD/tree/episode_#{@number}"
+  end
+  
+  def github_info
+    ""
+  end
+  
   def filename
     "zombietdd_#{@number}.mov"
   end
@@ -70,6 +78,10 @@ class FirstEpisode < Episode
 
   def welcome_text
     'Har du lyst til å være med? Her er første episode:'
+  end
+  
+  def github_link
+    nil
   end
   
 end
