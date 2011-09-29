@@ -10,7 +10,8 @@ class Episodes
            Episode.new(:number => '07', :youtube => 'QN7AOnoOVs4', :size => "222mb", :name => "Mot klokka"),
            Episode.new(:number => '08', :youtube => 'lmM0Ke-BOGY', :size => "262mb", :name => "Until You Drop"),
            Episode.new(:number => '09', :youtube => 'dDuPUCzVfWg', :size => "203mb", :name => "Backend's Back"),
-           Episode.new(:number => '10', :youtube => '7JySbj8ccEI', :size => "215mb", :name => "Roten til litt vondt", :github_excuse => "Ingen kode denne gangen, jeg glemte å lage ny branch for episoden. :-P")
+           Episode.new(:number => '10', :youtube => '7JySbj8ccEI', :size => "215mb", :name => "Roten til litt vondt", :github_excuse => "Ingen kode denne gangen, jeg glemte å lage ny branch for episoden. :-P"),
+           Episode.new(:number => '11', :youtube => 'CzFjxmI_934', :size => "229mb", :name => "Into the Dead Sky")
     ]
   end
   
