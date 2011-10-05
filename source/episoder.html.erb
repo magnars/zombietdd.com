@@ -2,7 +2,14 @@
   <h2>Alle episodene så langt</h2>
   <ul>
   <% for episode in Episodes.all %>
-    <li><a href="<%= episode.link %>"><%= episode.title %></a></li>
+    <li>
+      <a href="<%= episode.link %>">
+        <% if episode.guest then %>
+          <span class='guest'>starring <%= episode.guest.name %></span>
+        <% end %>
+        <%= episode.title %>
+      </a>
+    </li>
   <% end %>
   </ul>
 </div>
