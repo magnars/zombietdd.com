@@ -13,7 +13,8 @@ body {background: url(../images/pillar.jpg) repeat-y 50% 0; width: 900px; paddin
 #signup input.text {font-size: 24px; width: 600px; padding: 3px 6px;}
 #signup input.submit {font-size: 16px;}
 #muffens {font-size: 12px; padding: 5px 0 0 5px; color: #777;}
-#download {padding: 5px 0 0 5px;}
+#download {padding: 5px 0 0 5px; margin-left: 15px; list-style: disc;}
+#download li {padding: 5px 0 0 5px;}
 
 #episodes h2 {font-size: 24px; font-weight: bold;}
 #episodes li { background: url(../images/email.gif) repeat; font-size: 18px; border-bottom: 1px solid #a2a2a2; margin-bottom: 5px;}
