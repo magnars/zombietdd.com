@@ -18,7 +18,8 @@ class Episodes
            Episode.new(:number => '09', :youtube => 'dDuPUCzVfWg', :size => "203mb", :name => "Backend's Back",       :guest => Guests.jhannes),
            Episode.new(:number => '10', :youtube => '7JySbj8ccEI', :size => "215mb", :name => "Roten til litt vondt", :guest => Guests.jhannes, :github_excuse => "Ingen kode denne gangen, jeg glemte å lage ny branch for episoden. :-P"),
            Episode.new(:number => '11', :youtube => 'CzFjxmI_934', :size => "229mb", :name => "Into the Dead Sky",    :guest => Guests.jhannes),
-           Episode.new(:number => '12', :youtube => 'FqA-ne912RQ', :size => "211mb", :name => "Knapt med tid",        :guest => Guests.jhannes)
+           Episode.new(:number => '12', :youtube => 'FqA-ne912RQ', :size => "211mb", :name => "Knapt med tid",        :guest => Guests.jhannes),
+           Episode.new(:number => '13', :youtube => '7OqZnzY0agM', :size => "232mb", :name => "Någonting Är Jävligt Fel")
     ]
   end
   
