@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require "lib/guests"
 
 class Episodes
@@ -19,10 +20,11 @@ class Episodes
            Episode.new(:number => '10', :youtube => '7JySbj8ccEI', :size => "215mb", :name => "Roten til litt vondt", :guest => Guests.jhannes, :github_excuse => "Ingen kode denne gangen, jeg glemte å lage ny branch for episoden. :-P"),
            Episode.new(:number => '11', :youtube => 'CzFjxmI_934', :size => "229mb", :name => "Into the Dead Sky",    :guest => Guests.jhannes),
            Episode.new(:number => '12', :youtube => 'FqA-ne912RQ', :size => "211mb", :name => "Knapt med tid",        :guest => Guests.jhannes),
-           Episode.new(:number => '13', :youtube => '7OqZnzY0agM', :size => "232mb", :name => "Någonting Är Jävligt Fel")
+           Episode.new(:number => '13', :youtube => '7OqZnzY0agM', :size => "232mb", :name => "Någonting Är Jävligt Fel"),
+           Episode.new(:number => '14', :youtube => 'O80Bf--htnU', :size => "263mb", :name => "Buster'd",             :guest => Guests.cjno)
     ]
   end
-  
+
   def self.next(episode)
     all[all.index(episode) + 1]
   end
@@ -30,52 +32,52 @@ end
 
 class Episode
   attr_reader :number, :youtube, :size, :name, :github_excuse, :guest
-  
+
   def initialize(params)
     @number, @youtube, @size, @name = params[:number], params[:youtube], params[:size], params[:name]
     @github_excuse = params[:github_excuse] || false
     @guest = params[:guest] || false
   end
-  
+
   def next
     Episodes.next(self)
   end
-  
+
   def title
     "Episode #{@number.to_i}: #{@name}"
   end
-  
+
   def disqus_identifier
     "episode#{@number}"
   end
-  
+
   def link
     "/e#{@number}.html"
   end
-  
+
   def dropbox_link
     "http://dl.dropbox.com/u/3615058/zombietdd/#{filename}"
   end
-  
+
   def github_link
     "https://github.com/magnars/Zombie-TDD/tree/episode_#{@number}" unless @github_excuse
   end
-  
+
   def filename
     "zombietdd_#{@number}.mov"
   end
-  
+
   def welcome_text
     'Hvis du er ny her, så er det best å starte på <a href="/">første episode</a>.'
   end
-  
+
 end
 
 class FirstEpisode < Episode
   def initialize(params)
     super(params)
   end
-  
+
   def disqus_identifier
     "episode1"
   end
@@ -87,9 +89,9 @@ class FirstEpisode < Episode
   def welcome_text
     'Har du lyst til å være med? Her er første episode:'
   end
-  
+
   def github_link
     nil
   end
-  
+
 end
