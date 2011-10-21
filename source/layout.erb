@@ -6,12 +6,12 @@
   <title>Zombie TDD</title>
   <%= stylesheet_link_tag "app.css" %>
   <%= yield_content :head %>
-  <!--<%= partial "google_analytics" %>-->
+  <%= partial "google_analytics" %>
 </head>
 
 <body class="<%= page_classes %>">
 <div id="main" role="main">
-  
+
   <a id="logo_link" href="/"><h1 id="logo">Zombier, mafia og testdrevet utvikling</h1></a>
 
   <%= yield %>
