@@ -21,7 +21,8 @@ class Episodes
            Episode.new(:number => '11', :youtube => 'CzFjxmI_934', :size => "229mb", :name => "Into the Dead Sky",    :guest => Guests.jhannes),
            Episode.new(:number => '12', :youtube => 'FqA-ne912RQ', :size => "211mb", :name => "Knapt med tid",        :guest => Guests.jhannes),
            Episode.new(:number => '13', :youtube => '7OqZnzY0agM', :size => "232mb", :name => "Någonting Är Jävligt Fel"),
-           Episode.new(:number => '14', :youtube => 'O80Bf--htnU', :size => "263mb", :name => "Buster'd",             :guest => Guests.cjno)
+           Episode.new(:number => '14', :youtube => 'O80Bf--htnU', :size => "263mb", :name => "Buster'd",             :guest => Guests.cjno),
+           Episode.new(:number => '15', :youtube => 'tPe5ebTwsgs', :size => "164mb", :name => "Det er bare klapping")
     ]
   end
 
