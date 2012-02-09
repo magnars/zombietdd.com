@@ -23,7 +23,8 @@ class Episodes
            Episode.new(:number => '13', :youtube => '7OqZnzY0agM', :size => "232mb", :name => "Någonting Är Jävligt Fel"),
            Episode.new(:number => '14', :youtube => 'O80Bf--htnU', :size => "263mb", :name => "Buster'd",             :guest => Guests.cjno),
            Episode.new(:number => '15', :youtube => 'tPe5ebTwsgs', :size => "164mb", :name => "Det er bare klapping"),
-           Episode.new(:number => '16', :youtube => 'ORy9oITSFQU', :size => "253mb", :name => "Decouplitated")
+           Episode.new(:number => '16', :youtube => 'ORy9oITSFQU', :size => "253mb", :name => "Decouplitated"),
+           Episode.new(:number => '17', :youtube => 'gzwJ2qP5n3Y', :size => "353mb", :name => "I live på CiA",        :guest => Guests.cia_audience),
     ]
   end
 
