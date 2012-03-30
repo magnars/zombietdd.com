@@ -25,7 +25,8 @@ class Episodes
            Episode.new(:number => '15', :youtube => 'tPe5ebTwsgs', :size => "164mb", :name => "Det er bare klapping"),
            Episode.new(:number => '16', :youtube => 'ORy9oITSFQU', :size => "253mb", :name => "Decouplitated"),
            Episode.new(:number => '17', :youtube => 'gzwJ2qP5n3Y', :size => "353mb", :name => "I live på CiA",        :guest => Guests.cia_audience),
-           Episode.new(:number => '18', :youtube => 'gntBVEidlVo', :size => "269mb", :name => "Integrasjonstester",   :guest => Guests.cjno)
+           Episode.new(:number => '18', :youtube => 'gntBVEidlVo', :size => "269mb", :name => "Integrasjonstester",   :guest => Guests.cjno),
+           Episode.new(:number => '19', :youtube => '2DxRUJY82Ls', :size => "205mb", :name => "Undefined zombies",    :guest => Guests.jhannes)
     ]
   end
 
