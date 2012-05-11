@@ -30,7 +30,8 @@ class Episodes
            Episode.new(:number => '20', :youtube => 'EdpLNRKKRdM', :size => "214mb", :name => "Brutte løfter",               :guest => Guests.jhannes),
            Episode.new(:number => '21', :youtube => 'pINQcwrJfdg', :size => "113mb", :name => "Ingen barrikade",             :guest => Guests.jhannes),
            Episode.new(:number => '22', :youtube => 'ZAg2ntLTwnM', :size => "227mb", :name => "Zombies don't eat baguettes", :guest => Guests.jhannes),
-           Episode.new(:number => '23', :youtube => 'RjHTb4R87wE', :size => "209mb", :name => "Vandød nettleser",            :guest => Guests.jhannes)
+           Episode.new(:number => '23', :youtube => 'RjHTb4R87wE', :size => "209mb", :name => "Vandød nettleser",            :guest => Guests.jhannes),
+           Episode.new(:number => '24', :youtube => 'bM5sCmxdDG8', :size => "320mb", :name => "Zombieslakt",                 :guest => Guests.jhannes)
     ]
   end
 
