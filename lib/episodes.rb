@@ -35,7 +35,8 @@ class Episodes
            Episode.new(:number => '25', :youtube => 'kmhgi-Ig3UI', :size => "172mb", :name => "eventHub, del 1",             :github_excuse => "Ingen kode denne gangen, jeg måtte dele opp episoden. :-P"),
            Episode.new(:number => '26', :youtube => 'K-6yOKu0F_0', :size => "160mb", :name => "eventHub, del 2"),
            Episode.new(:number => '27', :youtube => '6G-mOn7pdsw', :size => "151mb", :name => "eventHub, del 3"),
-           Episode.new(:number => '28', :youtube => 'FazTtiRHsJE', :size => "103mb", :name => "Jøss, en server")
+           Episode.new(:number => '28', :youtube => 'FazTtiRHsJE', :size => "103mb", :name => "Jøss, en server"),
+           Episode.new(:number => '29', :youtube => 'WvLtHLe17_k', :size => "159mb", :name => "N-sync")
     ]
   end
 
