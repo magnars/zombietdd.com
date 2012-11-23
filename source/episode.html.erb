@@ -1,10 +1,10 @@
 <div id="welcome">
   Hei! Jeg heter Magnar, og jeg lager et nettspill fra scratch med javascript på klient og server.
-  Testdrevet etter beste evne. 
+  Testdrevet etter beste evne.
   <%= @episode.welcome_text %>
 </div>
 
-<iframe width="835" height="505" src="http://www.youtube.com/embed/<%= @episode.youtube %>?hd=1" frameborder="0" allowfullscreen></iframe>
+<%= @episode.embed_html %>
 
 <ul id="download">
   <% if @episode.github_link %>
@@ -12,9 +12,13 @@
   <% elsif @episode.github_excuse %>
     <li><%= @episode.github_excuse %></li>
   <% end %>
-  <li>Du kan også laste den ned og se på bussen: 
-  <a href="<%= @episode.dropbox_link %>"><%= @episode.filename %></a> (<%= @episode.size %>) 
-  - Dropbox gir kjipe headers, så høyreklikk og Lagre&nbsp;som&nbsp;...</li>
+  <% if @episode.dropbox_link %>
+    <li>Du kan også laste den ned og se på bussen:
+      <a href="<%= @episode.dropbox_link %>"><%= @episode.filename %></a> (<%= @episode.size %>)
+      - Dropbox gir kjipe headers, så høyreklikk og Lagre&nbsp;som&nbsp;...</li>
+  <% else %>
+    <li><%= @episode.download_excuse %></li>
+  <% end %>
   <% if not @episode.next %>
     <li>Hvis du har gått glipp av noe, kan du sjekke ut <a href="/episoder.html">alle episodene</a> her.</li>
   <% end %>

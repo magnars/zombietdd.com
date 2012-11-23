@@ -1,17 +1,29 @@
+<div id="welcome">
+  Hei! Jeg heter Magnar, og jeg lager et nettspill fra scratch med javascript på klient og server.
+  Testdrevet etter beste evne. Har du lyst til å være med?
+</div>
+
 <div id="episodes">
-  <h2>Alle episodene så langt</h2>
-  <ul>
-  <% for episode in Episodes.all %>
-    <li>
-      <a href="<%= episode.link %>">
-        <% if episode.guest then %>
-          <span class='guest'>starring <%= episode.guest.name %></span>
-        <% end %>
-        <u><%= episode.title %></u>
-      </a>
-    </li>
+  <% for act in Acts.all %>
+
+    <h2>Akt <%= act.number %></h2>
+    <p><%= act.description %></p>
+    <ul>
+      <% for episode in act.episodes %>
+        <li>
+          <a href="<%= episode.link %>">
+            <% if episode.guest then %>
+              <span class='guest'>starring <%= episode.guest.name %></span>
+            <% end %>
+            <u><%= episode.title %></u>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
   <% end %>
-  </ul>
+
+
 </div>
 
 <div id="signup">

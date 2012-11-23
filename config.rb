@@ -1,4 +1,4 @@
-### 
+###
 # Compass
 ###
 
@@ -31,13 +31,13 @@
 ###
 
 # Per-page layout changes:
-# 
+#
 # With no layout
 # page "/path/to/file.html", :layout => false
-# 
+#
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
-# 
+#
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
@@ -76,24 +76,22 @@ Episodes.all.each do |episode|
   end
 end
 
-page "/", :proxy => "/episode.html", :ignore => true do
-  @episode = Episodes.all.first
-end
+page "/", :proxy => "/episoder.html"
 
 # Build-specific configuration
 configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :cache_buster
-  
+
   # Use relative URLs
   # activate :relative_assets
-  
+
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
   # activate :smusher
-  
+
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
