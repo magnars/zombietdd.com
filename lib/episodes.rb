@@ -71,9 +71,10 @@ module Acts
              ),
 
      Act.new(:number => 'VII',
-             :description => "En ny innfallsvinkel til spillet, live parprogrammering med Christian Johansen på JavaZone.",
+             :description => "En ny innfallsvinkel til spillet, sparket i gang med live parprogrammering featuring Christian Johansen på JavaZone.",
              :episodes => [
-                           VimeoEpisode.new(:number => '30', :vid => '49485653', :name => "En trivelig aften på JavaZone", :guest => Guests.cjno)
+                           VimeoEpisode.new(:number => '30', :vid => '49485653', :name => "En trivelig aften på JavaZone", :guest => Guests.cjno),
+                           Episode.new(:number => '31', :vid => '3rsHL90fOxE', :size => "169mb", :name => "Sperra inne")
                           ]
              ),
     ]
